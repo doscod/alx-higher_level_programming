@@ -1,0 +1,27 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> BaseGeometry.integer_validator("int_number", 20)
+
+>>> BaseGeometry.integer_validator("test_num", 0)
+Traceback (most recent call last):
+ValueError: test_num must be greater than 0
+
+>>> BaseGeometry.integer_validator("numbers", 5, 4)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+>>> BaseGeometry.integer_validator("num", -32)
+Traceback (most recent call last):
+ValueError: num must be greater than 0
+
+>>> BaseGeometry.integer_validator("float_num", 4.2)
+Traceback (most recent call last):
+TypeError: float_num must be an integer
+
+>>> BaseGeometry.integer_validator("str_txt", "Maiq")
+Traceback (most recent call last):
+TypeError: str_txt must be an integer
+
+>>> BaseGeometry.integer_validator("int_number")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
