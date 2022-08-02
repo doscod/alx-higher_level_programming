@@ -7,4 +7,5 @@ module with class BaseGeometry
 
 
 class BaseGeometry:
+    """Empty class"""
     pass
