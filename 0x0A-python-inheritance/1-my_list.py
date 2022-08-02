@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 ===========================
-My module with class MyList
+module with class MyList
 ===========================
 """
 
